@@ -116,7 +116,7 @@
                         <default.http.port>${testServerHttpPort}</default.http.port>
                         <default.https.port>${testServerHttpsPort}</default.https.port>
                     </bootstrapProperties>
-                    <looseApplication>false</looseApplication>
+                    <!--looseApplication>false</looseApplication-->
                 </configuration>
             </plugin>
             <!-- Plugin to run functional tests -->
