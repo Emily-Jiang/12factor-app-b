@@ -24,6 +24,7 @@ public class ServiceBEndpoint {
   private static int callCount;
 
   boolean hardFailure = false;
+
   @GET
   public String hello() throws Exception {
     String hostname;
@@ -36,7 +37,7 @@ public class ServiceBEndpoint {
 
     try {
       hostname = InetAddress.getLocalHost().getHostName();
-    } catch(java.net.UnknownHostException e) {
+    } catch (UnknownHostException e) {
       hostname = e.getMessage();
     }
 
